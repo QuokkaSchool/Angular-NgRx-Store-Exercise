@@ -3,7 +3,9 @@
 
   <div class="flex gap-2">
     <p-button label="+1" (click)="increment()"/>
-    <input type="text" pInputText [(ngModel)]="value" />
+    <input type="text" pInputText [value]="counter$ | async" readonly />
     <p-button label="-1" (click)="decrement()"/>
   </div>
+
+  <p class="text-color">Aktualna wartość licznika: <span class="font-bold">{{ counter$ | async }}</span></p>
 </div>

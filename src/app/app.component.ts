@@ -15,6 +15,10 @@ export class AppComponent {
     {
       label: 'Licznik',
       routerLink: 'counter',
+    },
+    {
+      label: 'Pojazdy',
+      routerLink: 'vehicles',
     }
   ];
 }

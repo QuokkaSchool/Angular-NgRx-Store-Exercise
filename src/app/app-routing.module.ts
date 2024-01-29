@@ -16,6 +16,11 @@ const routes: Routes = [
     path: 'counter',
     loadChildren: () =>
       import('./pages/counter/counter.module').then((m) => m.CounterModule)
+  },
+  {
+    path: 'vehicles',
+    loadChildren: () =>
+      import('./pages/vehicles/vehicles.module').then((m) => m.VehiclesModule)
   }
 ];
 
