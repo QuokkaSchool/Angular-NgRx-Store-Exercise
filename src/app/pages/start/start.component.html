@@ -1,0 +1,91 @@
+<div class="container container--page container--shrink">
+  <h1 class="text-color">NgRx Store Example - cz. 1</h1>
+
+  <div class="flex justify-content-end">
+    <a href="https://ngrx.io/docs" target="_blank" rel="noopener noreferrer" icon="pi pi-check"
+       class="p-button p-button-sm font-bold">
+      <i class="pi pi-link pr-2"></i>
+      <span>Dokumentacja</span>
+    </a>
+  </div>
+
+  <p class="text-color"><span class="font-bold">NgRx</span> w Angularze to biblioteka stanu dla Angulara, która opiera
+    się na architekturze
+    Redux. Redux to wzorzec zarządzania stanem, który jest szczególnie popularny w aplikacjach opartych na JavaScript,
+    szczególnie tych zbudowanych w oparciu o biblioteki jak React czy Angular.</p>
+
+  <p class="text-color">Dostarcza mechanizmów do zarządzania stanem aplikacji w sposób przewidywalny i
+    jednolity. Stan aplikacji, czyli dane, które definiują jej zachowanie i wygląd w danym momencie, są przechowywane w
+    jednym obiekcie nazywanym <span class="font-bold">store</span>. Dzięki temu, stan aplikacji staje się przewidywalny
+    i łatwy w zarządzaniu.</p>
+
+  <p class="text-color">Główne zalety <span class="font-bold">NgRx</span> to:</p>
+  <ul>
+    <li class="text-color mb-2"><span class="font-bold">Jednolitość:</span> Wszystkie zmiany w stanie aplikacji są
+      wykonywane w sposób jednostronny i przewidywalny, co ułatwia debugowanie i utrzymanie kodu.
+    </li>
+    <li class="text-color mb-2"><span class="font-bold">Unikalność źródła prawdy:</span> Stan aplikacji jest
+      przechowywany w jednym miejscu (w store), co eliminuje możliwość niezgodności danych.
+    </li>
+    <li class="text-color mb-2"><span class="font-bold">Łatwość testowania:</span> Możliwość testowania reduktorów oraz
+      selektorów pozwala na łatwe pisanie testów jednostkowych.
+    </li>
+    <li class="text-color mb-2"><span class="font-bold">Łatwość w reagowaniu na zmiany:</span> Mechanizm subskrypcji do
+      zmian w stanie pozwala na reagowanie na te zmiany w komponentach interfejsu użytkownika.
+    </li>
+  </ul>
+
+  <p class="text-color"><span class="font-bold">NgRx</span> składa się z kilku głównych części:</p>
+  <ul>
+    <li class="text-color mb-2"><span class="font-bold">Actions:</span> to zdarzenia, które opisują jakie zmiany mają
+      zostać dokonane w stanie aplikacji.
+    </li>
+    <li class="text-color mb-2"><span class="font-bold">Reducers:</span> to funkcja, która przyjmuje aktualny stan i
+      akcję, a następnie zwraca nowy stan.
+    </li>
+    <li class="text-color mb-2"><span class="font-bold">Selectors:</span> to funkcje, które pozwalają na wybieranie
+      konkretnych kawałków stanu aplikacji.
+    </li>
+    <li class="text-color mb-2"><span class="font-bold">Store:</span> Centralne miejsce przechowywania stanu aplikacji.
+    </li>
+    <li class="text-color mb-2"><span class="font-bold">Effects:</span> to mechanizm do zarządzania asynchronicznymi
+      operacjami, takimi jak mp. pobieranie danych z serwera.
+    </li>
+  </ul>
+
+  <p class="text-color"><span class="font-bold">Schemat zarządzania stanem</span> za pomocą NgRx:</p>
+  <img class="block w-full" src="./../../../assets/state-management-lifecycle.png">
+
+  <p class="text-color">Do korzystania z NgRx wymagana jest instalacja:</p>
+  <ul>
+    <li class="text-color mb-2"><a class="font-bold" href="https://www.npmjs.com/package/@ngrx/effects" target="_blank">@ngrx/effects</a>
+    </li>
+    <li class="text-color mb-2"><a class="font-bold" href="https://www.npmjs.com/package/@ngrx/router-store"
+                                   target="_blank">@ngrx/router-store</a></li>
+    <li class="text-color mb-2"><a class="font-bold" href="https://www.npmjs.com/package/@ngrx/store" target="_blank">@ngrx/store</a>
+    </li>
+    <li class="text-color mb-2"><a class="font-bold" href="https://www.npmjs.com/package/@ngrx/store-devtools"
+                                   target="_blank">@ngrx/store-devtools</a></li>
+  </ul>
+
+  <p class="text-color">Warto również zainstalować do swojej przeglądarki rozszerzenie <span class="font-bold">Redux DevTools</span>.
+    Umożliwia łatwe debugowanie i monitorowanie stanu aplikacji. Oferuje szereg narzędzi do śledzenia
+    akcji, stanu magazynu (store), podrzędnych stanów i wiele innych. Pozwala programistom na łatwe śledzenie zmian
+    stanu, debugowanie akcji oraz analizę wydajności aplikacji opartej na NgRx. Jest to pomocne narzędzie podczas
+    rozwijania i testowania złożonych aplikacji tworzonych w Angular z użyciem NgRx.
+  </p>
+
+  <p class="text-color">Pobierz <span class="font-bold">Redux DevTools</span> dla: </p>
+  <ul>
+    <li class="text-color mb-2">
+      <span class="font-bold">Chrome: </span>
+      <a href="https://chromewebstore.google.com/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd"
+         target="_blank">Chrome Web Store</a>
+    </li>
+    <li class="text-color mb-2">
+      <span class="font-bold">Firefox: </span>
+      <a href="https://addons.mozilla.org/pl/firefox/addon/reduxdevtools/"
+         target="_blank">Firefox Browser Add-Ons</a>
+    </li>
+  </ul>
+</div>

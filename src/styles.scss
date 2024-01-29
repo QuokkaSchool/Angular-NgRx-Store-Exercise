@@ -1,7 +1,21 @@
 @import "/node_modules/primeflex/primeflex.css";
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
 
 body {
   font-family: var(--font-family);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+
+  &--page {
+    margin: 4rem auto;
+  }
+
+  &--shrink {
+    max-width: 600px;
+  }
 }
