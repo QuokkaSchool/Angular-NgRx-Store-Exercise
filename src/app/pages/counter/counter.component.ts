@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./counter.component.scss']
 })
 export class CounterComponent {
+  protected value = 0;
 
+  protected increment(): void {
+
+  }
+
+  protected decrement(): void {
+
+  }
 }

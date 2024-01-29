@@ -1,1 +1,9 @@
-<p>counter works!</p>
+<div class="container container--page container--shrink">
+  <h1 class="text-color">Licznik (przykład)</h1>
+
+  <div class="flex gap-2">
+    <p-button label="+1" (click)="increment()"/>
+    <input type="text" pInputText [(ngModel)]="value" />
+    <p-button label="-1" (click)="decrement()"/>
+  </div>
+</div>
