@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
+import { CounterFacade } from '../../store/counter/counter.facade';
 
 @Component({
   selector: 'app-counter',
@@ -7,13 +8,15 @@ import { Observable, of } from 'rxjs';
   styleUrls: ['./counter.component.scss']
 })
 export class CounterComponent {
-  protected counter$: Observable<number> = of(0);
+  protected counter$: Observable<number> = this.counterFacade.counter$;
+
+  constructor(private counterFacade: CounterFacade) {}
 
   protected increment(): void {
-
+    this.counterFacade.increment();
   }
 
   protected decrement(): void {
-
+    this.counterFacade.decrement();
   }
 }
