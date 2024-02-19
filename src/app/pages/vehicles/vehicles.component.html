@@ -5,6 +5,8 @@
     <p-button (click)="addVehicle()" label="Dodaj pojazd" icon="pi pi-plus" size="small"></p-button>
   </div>
 
+  <p-toast position="bottom-center" life="1000"></p-toast>
+  <p-progressBar *ngIf="loading$ | async" mode="indeterminate" [style]="{ height: '6px' }"></p-progressBar>
   <ng-container *ngIf="(vehicles$ | async) as vehicles">
     <p-table [value]="vehicles" styleClass="p-datatable-gridlines p-datatable-sm">
       <ng-template pTemplate="header">

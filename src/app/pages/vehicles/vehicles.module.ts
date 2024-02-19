@@ -5,6 +5,10 @@ import { ButtonModule } from 'primeng/button';
 import { VehiclesRoutingModule } from './vehicles-routing.module';
 import { TableModule } from 'primeng/table';
 import { DialogModule } from 'primeng/dialog';
+import { ProgressBarModule } from 'primeng/progressbar';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
+import { MessagesModule } from 'primeng/messages';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,13 @@ import { DialogModule } from 'primeng/dialog';
     ButtonModule,
     VehiclesRoutingModule,
     TableModule,
-    DialogModule
+    DialogModule,
+    ProgressBarModule,
+    ToastModule,
+    MessagesModule,
+  ],
+  providers: [
+    MessageService,
   ]
 })
 export class VehiclesModule { }

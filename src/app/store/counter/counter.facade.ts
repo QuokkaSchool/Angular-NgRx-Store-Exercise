@@ -9,7 +9,7 @@ import * as CounterActions from './counter.actions';
   providedIn: 'root'
 })
 export class CounterFacade {
-  public counter$: Observable<number> = this.store.select(CounterSelectors.selectValue)
+  public counter$: Observable<number> = this.store.select(CounterSelectors.selectValue);
 
   constructor(private store: Store<IAppState>) {}
 
